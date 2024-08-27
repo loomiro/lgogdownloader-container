@@ -6,7 +6,7 @@ docker build -t lgogdownloader .
 docker run --rm -it \
   -v /srv/data/lgogdownloader/:/root/.config/lgogdownloader \
   -v gog-games:/mnt \
-  ghcr.io/loomiro/lgogdownloader:latest \
+  ghcr.io/loomiro/lgogdownloader:3.15 \
   --directory /mnt \
   --login
 ```
@@ -15,7 +15,7 @@ docker run --rm -it \
 docker run --rm -it \
   -v /srv/data/lgogdownloader/:/root/.config/lgogdownloader \
   -v gog-games:/mnt \
-  ghcr.io/loomiro/lgogdownloader:latest \
+  ghcr.io/loomiro/lgogdownloader:3.15 \
   --directory /mnt \
   --download
 ```
