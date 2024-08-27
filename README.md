@@ -4,7 +4,7 @@ docker build -t lgogdownloader .
 
 ```yaml
 docker run --rm -it \
-  -v /conf/lgogdownloader:/root/.config/lgogdownloader \
+  -v /srv/data/lgogdownloader/:/root/.config/lgogdownloader \
   -v gog-games:/mnt \
   ghcr.io/loomiro/lgogdownloader:latest \
   --directory /mnt \
@@ -13,7 +13,7 @@ docker run --rm -it \
 
 ```yaml
 docker run --rm -it \
-  -v /conf/lgogdownloader:/root/.config/lgogdownloader \
+  -v /srv/data/lgogdownloader/:/root/.config/lgogdownloader \
   -v gog-games:/mnt \
   ghcr.io/loomiro/lgogdownloader:latest \
   --directory /mnt \
