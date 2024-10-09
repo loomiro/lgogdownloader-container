@@ -9,7 +9,7 @@ on:
       - main
   schedule:
     # Dieser Cron-Trigger läuft jeden Sonntag um 0 Uhr UTC
-      - cron: '0 0 * * 0'
+    #  - cron: '0 0 * * 0'
 
 jobs:
   build:
